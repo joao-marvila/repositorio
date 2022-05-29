@@ -10,21 +10,27 @@
             width: 400px;
             border-collapse: collapse;
             margin: auto;
+            position: relative; /* Cabeçalho fixo*/
+        } 
+        caption{ /* "Título" */
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+        }
+        thead > tr > th{ /* Cabeçalho fixo*/
+            position: sticky;
+            top: 0;
+            background-color: rgb(71, 71, 71);
         }
         thead, tfoot{
             background-color: rgb(71, 71, 71);
             color: white;
         }
-        tbody tr:nth-child(even){
+        tbody tr:nth-child(even){ /* Efeito zebrado*/
             background-color: rgb(218, 218, 218);
         } /* odd = ímpar
             even= par
             2n,3n...*/
-        caption{
-            font-size: 1.5em;
-            font-weight: bold;
-            padding: 10px;
-        }
         th, td{
             border: 1px solid black;
             padding: 5px;
@@ -205,7 +211,11 @@
         </tbody>
         <tfoot>
             <tr>
-                <th scope="row">Total de Habitantes</th>
+                <th scope="row" colspan="2">Total de Habitantes</th> 
+                <!-- 
+                    "colspan= mesclagem de coluna"
+                    "Rowspan= mesclagem de linhas"        
+                -->
                 <td class="n"><strong>213.009.735</strong></td>
             </tr>
         </tfoot>
