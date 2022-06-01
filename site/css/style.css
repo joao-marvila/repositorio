@@ -10,10 +10,15 @@
     --fonte1:'Poppins', sans-serif;
 }
 
+
+
 *{
     font-family: var(--fonte1);
     text-align: justify;
+    padding: 0px;
+    margin: 0px;
 }
+
 
 body{
     background-color: var(--cor4);
@@ -21,39 +26,59 @@ body{
 
 main{
     min-width: 200px;
-    max-width: 1080px;
+    max-width: 900px;
     margin:auto;
     padding-top:50px;
     color: white;
-}
-h1, h2{
-    color: var(--cor1);
-}
-#sobre{
-    position: relative;
-}
-
-#conteudo{
-    display: inline-block;
-    width: 60%;
-
-}
-#sobre>img{
-    width: 350px;
-    position: absolute;
-    right: 40px;
-    
-}
-
-#skills{
-
-}
-
-#contato{
-
 }
 
 footer{
     background-color: var(--cor1);
     color: black;
+}
+
+h1{
+    color: var(--cor1);
+    font-size: 2.5em;
+    text-align: center;
+}
+
+h2{
+    color: var(--cor1);
+    font-size: 1.5em;
+}
+
+p{
+    font-size: 1em;
+}
+
+
+
+
+
+#sobre{
+    overflow: auto;
+    border: 1px solid orange;
+    border-radius: 20px;
+    padding: 20px;
+}
+#sobre>img{
+    width: 30%;
+    float:right;    
+}
+
+
+
+#conteudo{
+}
+
+
+
+#skills{
+}
+
+
+
+#contato{
+
 }
