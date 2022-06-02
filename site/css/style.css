@@ -6,7 +6,7 @@
     --cor1:#fb7d00;
     --cor2:#025e88;
     --cor3:#006797;
-    --cor4:#000000;
+    --cor4:rgb(25, 25, 25);
     --fonte1:'Poppins', sans-serif;
 }
 
@@ -21,14 +21,14 @@
 
 
 body{
-    background-color: var(--cor4);
+    background-color: black;
 }
 
 main{
     min-width: 200px;
     max-width: 900px;
     margin:auto;
-    padding-top:50px;
+    padding:30px;
     color: white;
 }
 
@@ -40,7 +40,7 @@ footer{
 h1{
     color: var(--cor1);
     font-size: 2.5em;
-    text-align: center;
+    text-align: left;
 }
 
 h2{
@@ -57,28 +57,37 @@ p{
 
 
 #sobre{
-    overflow: auto;
-    border: 1px solid orange;
-    border-radius: 20px;
-    padding: 20px;
+   
 }
 #sobre>img{
-    width: 30%;
+    width: 35%;
     float:right;    
 }
 
 
 
 #conteudo{
+    
 }
 
 
 
 #skills{
+    
 }
 
 
 
 #contato{
+    
+}
 
+.bloco{
+    overflow: auto;
+    padding: 20px;
+    border-top: 5px solid var(--cor1);
+    border-left: 5px solid var(--cor1);
+    border-radius: 25px;
+    margin-bottom: 75px;
+    background-color:rgb(25, 25, 25 );
 }
