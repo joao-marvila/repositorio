@@ -20,6 +20,53 @@
 }
 
 
+
+
+/*Dropdown*/
+
+nav{
+    background-color: var(--cor1);
+    border-radius: 15px;
+    margin: 15px;
+    overflow: hidden;
+    display: inline-block;
+    
+}
+.drop-btn{
+    text-decoration: none;
+    font-size: 1.7em;
+    font-weight: bolder;
+    color: black;
+    padding: 50px;
+    text-align: center;
+}
+
+
+.drop-cont{
+    position: absolute;
+    background-color: var(--cor1);
+    width: 150px;
+    display: none;
+    padding: 15px;
+    
+}
+
+.drop-cont a{
+    padding: 50px;
+    text-decoration: none;
+    text-align: center;
+    color: white;
+    
+}
+
+nav:hover .drop-cont{
+    display: block;
+}
+
+
+
+
+
 body{
     background-color: black;
 }
