@@ -25,38 +25,60 @@
 /*Dropdown*/
 
 nav{
+    display: inline-block;
+    overflow: hidden;
+    width: 150px;   
+    margin: 15px;
+    float: none;
     background-color: var(--cor1);
     border-radius: 15px;
-    margin: 15px;
-    overflow: hidden;
-    display: inline-block;
-    
+    text-align: center;
 }
+
 .drop-btn{
+    font-size: 1.7em;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    transition-delay: 50ms;
+}
+
+nav:hover{
+    background-color: black;
+    border: 2px solid var(--cor1);
+    transition-duration: 0.2s;
+    padding: 3px;
+}
+nav:hover .drop-btn{
+    color: var(--cor1); padding: 3px;
+    transition-duration: 0.2s;
+}
+
+.iten:hover{
+    background-color: black;
+    padding: 3px;
+    border: 2px solid var(--cor1);
+    transition-duration: 0.2s;
+    color: var(--cor1);
+}
+.drop-cont{
+    position: absolute;
+    width: 150px;
+    display: none;
+}
+
+.drop-cont a{
+    display: block;
+    margin-top: 15px;
+    background-color: var(--cor1);
+    border-radius: 15px;
+
     text-decoration: none;
     font-size: 1.7em;
     font-weight: bolder;
     color: black;
-    padding: 50px;
     text-align: center;
-}
-
-
-.drop-cont{
-    position: absolute;
-    background-color: var(--cor1);
-    width: 150px;
-    display: none;
-    padding: 15px;
-    
-}
-
-.drop-cont a{
-    padding: 50px;
-    text-decoration: none;
-    text-align: center;
-    color: white;
-    
 }
 
 nav:hover .drop-cont{
@@ -65,11 +87,10 @@ nav:hover .drop-cont{
 
 
 
-
-
 body{
     background-color: black;
 }
+
 
 main{
     min-width: 200px;
@@ -79,10 +100,12 @@ main{
     color: white;
 }
 
+
 footer{
     background-color: var(--cor1);
     color: black;
 }
+
 
 h1{
     color: var(--cor1);
@@ -90,27 +113,27 @@ h1{
     text-align: left;
 }
 
+
 h2{
     color: var(--cor1);
     font-size: 1.5em;
 }
+
 
 p{
     font-size: 1em;
 }
 
 
-
-
-
 #sobre{
    
 }
+
+
 #sobre>img{
     width: 35%;
     float:right;    
 }
-
 
 
 #conteudo{
@@ -118,23 +141,27 @@ p{
 }
 
 
-
 #skills{
     
 }
-
 
 
 #contato{
     
 }
 
+
 .bloco{
+    width: 800px;
     overflow: auto;
+    margin-bottom: 75px;
     padding: 20px;
     border-top: 5px solid var(--cor1);
     border-left: 5px solid var(--cor1);
     border-radius: 25px;
-    margin-bottom: 75px;
     background-color:rgb(25, 25, 25 );
+}
+.bloco:hover{
+    width: 900px;
+    transition-duration: 0.5s;
 }
